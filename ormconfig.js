@@ -1,8 +1,13 @@
 module.exports = {
-  "type": "postgres",
-  "host": "localhost",
-  "username": "test",
-  "password": "test",
-  "port": 3306,
-  "database": "rentx"
-}
+  type: "postgres",
+  host: "localhost",
+  username: "docker",
+  password: "ignite",
+  port: 5432,
+  database: "rentx",
+  migrations: ["./src/database/migrations/*.ts"],
+  entities: ["./src/modules/**/entities/*.ts"],
+  cli: {
+    migrationsDir: "./src/database/migrations",
+  },
+};
