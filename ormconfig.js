@@ -3,7 +3,7 @@ module.exports = {
   host: "localhost",
   username: "docker",
   password: "ignite",
-  port: 5432,
+  port: 3432,
   database: "rentx",
   migrations: ["./src/database/migrations/*.ts"],
   entities: ["./src/modules/**/entities/*.ts"],
